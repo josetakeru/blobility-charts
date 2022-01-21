@@ -1,3 +1,4 @@
+{{- if eq .Values.deployment.deploy "true" }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -29,4 +30,5 @@ spec:
               secretKeyRef: 
                 name: "{{ .Values.name }}-secret" 
                 key: aws_secret_access_key
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
+{{- end }}

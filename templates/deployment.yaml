@@ -31,6 +31,6 @@ spec:
               secretKeyRef: 
                 name: "{{ .Values.name }}-secret" 
                 key: aws_secret_access_key
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
       imagePullSecrets:
         - name: "{{ .Values.name }}-regcred"

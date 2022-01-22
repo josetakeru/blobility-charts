@@ -10,5 +10,5 @@ spec:
     targetPort: 8080
     nodePort: 30007
   selector:
-    app: app: "{{ .Values.name }}-microservice"
+    app: "{{ .Values.name }}-microservice"
   type: NodePort

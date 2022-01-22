@@ -2,6 +2,8 @@ name: "list-objects"
 replicaCount: 1
 namespace: default
 
+region: "eu-west-1"
+
 image:
   repository: "infiejos/tier-blobility-registry"
   pullPolicy: IfNotPresent

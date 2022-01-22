@@ -10,7 +10,9 @@ spec:
   containers:
   - name: "{{ .Values.name }}"
     image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-    env: 
+    env:
+      - name: AWS_DEFAULT_REGION
+        value: "{{ .Values.region }}"
       - name: AWS_ACCESS_KEY_ID 
         valueFrom: 
           secretKeyRef: 

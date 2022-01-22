@@ -15,6 +15,7 @@ secret:
   aws_secret_access_key: ""
   dockerUsername: ""
   dockerPassword: ""
+  dockerRegistry: "https://index.docker.io/v1/"
 
 deployment:
   deploy: "false"

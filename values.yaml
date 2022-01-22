@@ -1,5 +1,5 @@
 name: "list-objects"
-replicaCount: 1
+replicaCount: 3
 namespace: default
 
 region: "eu-west-1"

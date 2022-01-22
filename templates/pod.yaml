@@ -7,6 +7,8 @@ metadata:
     app: "{{ .Values.name }}"
 spec:
   restartPolicy: Never
+  imagePullSecrets:
+  - name: "{{ .Values.name }}-regcred"
   containers:
   - name: "{{ .Values.name }}"
     image: {{ .Values.image.repository }}:{{ .Values.image.tag }}

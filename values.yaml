@@ -13,6 +13,8 @@ image:
 secret:
   aws_access_key_id: ""
   aws_secret_access_key: ""
+  dockerUsername: ""
+  dockerPassword: ""
 
 deployment:
   deploy: "false"

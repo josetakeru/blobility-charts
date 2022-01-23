@@ -32,5 +32,11 @@ spec:
                 name: "{{ .Values.name }}-secret" 
                 key: aws_secret_access_key
         imagePullPolicy: {{ .Values.image.pullPolicy }}
+        readinessProbe:
+          httpGet:
+            path: /list-objects
+            port: 8080
+          initialDelaySeconds: 20
+          periodSeconds: 2
       imagePullSecrets:
         - name: "{{ .Values.name }}-regcred"

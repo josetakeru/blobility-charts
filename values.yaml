@@ -5,7 +5,7 @@ namespace: default
 region: "eu-west-1"
 
 image:
-  repository: "infiejos/tier-blobility-registry"
+  repository: "infiejos/tier-blobility-microservice"
   pullPolicy: IfNotPresent
   # DO NOT REMOVE THIS LINE: IT IS HERE FOR AUTOMATION PURPOSES
   tag: "latest"

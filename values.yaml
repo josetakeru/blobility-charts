@@ -8,7 +8,7 @@ image:
   repository: "infiejos/tier-blobility-microservice"
   pullPolicy: IfNotPresent
   # DO NOT REMOVE THIS LINE: IT IS HERE FOR AUTOMATION PURPOSES
-  tag: "0.0.3"
+  tag: "0.0.4"
 
 secret:
   aws_access_key_id: ""
